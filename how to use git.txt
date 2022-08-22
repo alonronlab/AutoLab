@@ -1,0 +1,23 @@
+1. Run the windows command prompt (cmd) from the project's directory (AutoLab)
+2. Switch to 'dev' branch using command: "git checkout dev"
+	a. 'dev' is the name of the development branch. USE ONLY THIS BRANCH (and its sub-branched) for developing new features / experiments.
+	b. Use this command to validate that your working branch is indeed 'dev': "git branch"
+	c. If you are working on a sub-branch of dev switch to it.
+	d. A good practice would be creating new sub-branch for a new experiment.
+3. Update branch with command: "git pull"
+4. Write your new code.
+5. Add your new code to the local 'dev' branch using commands:
+	a. "git add -p" - this should be used if existing files have been changed. Use 'y' to add changes and 'n' to ignore them.
+	b. "git add <new_file1> <new_file2> ..." - this should be used if new files were added
+6. Commit your changes on the local 'dev' branch using command: "git commit -m '<changes description>' "
+7. Push your changes to the remote repository using command: "git push origin dev"
+	a. If you working branch is not 'dev', use your branch name
+8. When your new feature is done, merge it to 'main' branch using the following commands:
+	a. "git checkout main"
+	b. "git pull"
+	c. "git checkout dev"
+	d. "git merge main" - after this command use "git status" to check on merge failures and fix them
+	e. "git push origin dev"
+	f. "git checkout main"
+	g. "git merge dev"
+	h. "git push origin main"
