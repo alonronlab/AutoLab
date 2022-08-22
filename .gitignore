@@ -126,8 +126,7 @@ venv.bak/
 dmypy.json
 
 # Pyre type checker
-<<<<<<< HEAD
 .pyre/
-=======
-.pyre/
->>>>>>> 59629d8ea751b4c0f8eb39960cc03648232ea300
+
+# Project Ignore
+measurements/
