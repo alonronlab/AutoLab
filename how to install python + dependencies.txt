@@ -1,0 +1,10 @@
+How to install python and dependencies for AutoLab project?
+1. Install python39-32bit:
+	a. This is used for the Attodry lib - controls the cryostat
+	b. DON'T ADD THIS TO 'PATH' ENVIRONMENT VARIABLE (checkbox during installation)
+2. Install python38-64bit:
+	a. This is used for all other libs
+	b. ADD THIS TO 'PATH' ENVIRONMENT VARIABLE (checkbox during installation)
+3. Use Attodry lib with the 32bit-python by running it as a subprocess of the 64bit-python
+
+*** In order to check which python version to install - go to pypi website and check what the modules supports
